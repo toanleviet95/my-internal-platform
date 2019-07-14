@@ -50,15 +50,12 @@ class SignIn extends React.Component {
           <div className="gx-app-login-main-content">
             <div className="gx-app-logo-content">
               <div className="gx-app-logo-content-bg">
-                <img src="https://via.placeholder.com/272x395" alt='Neature'/>
               </div>
               <div className="gx-app-logo-wid">
-                <h1><IntlMessages id="app.userAuth.signIn"/></h1>
-                <p><IntlMessages id="app.userAuth.bySigning"/></p>
-                <p><IntlMessages id="app.userAuth.getAccount"/></p>
+                <h1>Internal Platform</h1>
               </div>
               <div className="gx-app-logo">
-                <img alt="example" src={require("assets/images/logo.png")}/>
+                <img alt="example" src={require("assets/images/my-w-logo.png")}/>
               </div>
             </div>
             <div className="gx-app-login-content">
@@ -96,40 +93,7 @@ class SignIn extends React.Component {
                   <Button type="primary" className="gx-mb-0" htmlType="submit">
                     <IntlMessages id="app.userAuth.signIn"/>
                   </Button>
-                  <span><IntlMessages id="app.userAuth.or"/></span> <Link to="/signup"><IntlMessages
-                  id="app.userAuth.signUp"/></Link>
                 </FormItem>
-                <div className="gx-flex-row gx-justify-content-between">
-                  <span>or connect with</span>
-                  <ul className="gx-social-link">
-                    <li>
-                      <Icon type="google" onClick={() => {
-                        this.props.showAuthLoader();
-                        this.props.userGoogleSignIn();
-                      }}/>
-                    </li>
-                    <li>
-                      <Icon type="facebook" onClick={() => {
-                        this.props.showAuthLoader();
-                        this.props.userFacebookSignIn();
-                      }}/>
-                    </li>
-                    <li>
-                      <Icon type="github" onClick={() => {
-                        this.props.showAuthLoader();
-                        this.props.userGithubSignIn();
-                      }}/>
-                    </li>
-                    <li>
-                      <Icon type="twitter" onClick={() => {
-                        this.props.showAuthLoader();
-                        this.props.userTwitterSignIn();
-                      }}/>
-                    </li>
-                  </ul>
-                </div>
-                <span
-                  className="gx-text-light gx-fs-sm"> demo user email: 'demo@example.com' and password: 'demo#123'</span>
               </Form>
             </div>
 

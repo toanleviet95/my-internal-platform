@@ -12,7 +12,6 @@ const Main = ({match}) => (
     <Route path={`${match.url}/widgets`} component={Widgets}/>
     <Route path={`${match.url}/metrics`} component={Metrics}/>
     <Route path={`${match.url}/layouts`} component={Layouts}/>
-    <Route path={`${match.url}/algolia`} component={asyncComponent(() => import('../algolia'))}/>
   </Switch>
 );
 
